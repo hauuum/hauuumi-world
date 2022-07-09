@@ -1,0 +1,208 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Source+Sans+Pro:300,400,700&display=swap');
+
+/* 
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Bitter', serif;
+*/
+
+
+/*  ----------  COLOR SCHEME----------   */
+:root {
+    --hightlight-color: #e54d42; /* var(--hightlight-color); */
+    --main-text-color: #2b2b2b; /* var(--main-text-color); */
+    --sec-text-color: #687078; /* var(--sec-text-color); */
+    --sec-bg-color: #f7f7f7; /* var(--sec-bg-color); */
+}
+
+
+
+
+/*  ----------  LOGO & TYPORAPHY ----------   */
+.logo a {
+    width: 97px;
+    height: 48px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999em;
+    display: block;
+}
+
+body{
+    font: 16px/24px 'Source Sans Pro', sans-serif;
+    color: var(--main-text-color);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bitter', serif;
+    letter-spacing: -0.025em;
+    line-height: 1;
+}
+.heading1{
+    font-size:36px; 
+    font-weight:bold;
+}
+.heading2{
+    font-size:30px;
+    font-weight:bold;
+}
+.heading3{
+    font-size:24px;
+} 
+.heading4{
+    font-size:18px;
+}
+.heading5{
+    font-size:16px;
+    font-weight:bold;
+}
+.heading6{
+    font-size:14px;
+    text-transform: uppercase;
+}
+
+
+
+
+/*  ----------  BUTTONS & LINKS ----------   */
+.primary-btn {
+    background: var(--hightlight-color);
+    line-height: 48px;
+    height: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 24px;
+    border:none;
+    border-radius: 5px;
+    box-shadow: inset 0px -3px rgba(0,0,0,0.2);
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.primary-btn:hover {
+    background: #ff5748;
+}
+.primary-btn:active, .primary-btn:focus{
+    background: #ff5748;
+    box-shadow: none;
+    outline: none;
+}
+.primary-btn:disabled{
+    background: #e6e5e5;
+    color: #b9b8b8;
+}
+.secondary-btn {
+    background: var(--sec-bg-color);
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 16px;
+    border:none;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #2b2b2b;
+    transition: background 0.3s, color 0.3s;
+}
+.secondary-btn:hover {
+    background: #252e38;
+    color: var(--sec-bg-color);
+}
+.secondary-btn:active, .secondary-btn:focus {
+    background: #252e38;
+    color: var(--sec-bg-color);
+    box-shadow: none;
+    outline: none;
+}
+.secondary-btn:disabled {
+    background: #e6e5e5;
+    color: #7a7a7a;
+}
+
+
+
+
+
+
+/*  ----------  FORM ----------   */
+form {
+    width: 470px;
+    margin:  0 auto;
+}
+.field{
+    padding: 3px;
+    display: flex;
+    font-size: 16px;
+    background:  var(--sec-bg-color);
+    margin-bottom:13px;
+}
+.field:last-of-type{
+    margin-bottom: 0;
+}
+
+.field label{
+    width: 132px;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 6px;
+    font-weight: 300;
+
+}
+.field input, .field select{
+    background: #fff;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 16px; 
+    flex: 1;
+    border:none;
+    color: #7a7a7a;
+}
+.field input[type="number"]{
+    text-align: right;
+    padding-left: 16px;
+    padding-right: 0;
+}
+.field textarea{
+    background: #fff;
+    border:none;
+    flex: 1;
+    padding: 16px;
+}
+.field:hover {
+    background: #fdd7d7;
+    color: #d92328;
+}
+.field:hover input, 
+.field:hover select, 
+.field:hover input::placeholder, 
+.field:hover textarea, 
+.field:hover textarea::placeholder{
+    color: #d92328;
+}
+
+
+
+
+
+
+/*  ----------  HR ----------   */
+hr {
+    border:none;
+    width: 370px;
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #fff 0%, #cdcdcd 50%, #fff 100%);
+}
+
+hr.double{
+    width: 120px;
+    height: 5px;
+    border-top:1px solid #dcdbdb;
+    border-bottom:1px solid #dcdbdb;
+    background: none;
+}
+
+.shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    border: 1px solid #dcdbdb;
+    background-color: #fff;
+}

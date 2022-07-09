@@ -1,0 +1,45 @@
+
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,ul{
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #383838;
+}
+
+img{
+    vertical-align: top;
+}
+
+.clear_fix:before,
+.clear_fix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+.clear_fix:after {
+    clear: both;
+}
+
+.ir_so {
+	overflow:hidden;
+	position: absolute;
+	width: 0;
+	height:0;
+	line-height: 0;
+	text-indent: -9999px;
+}

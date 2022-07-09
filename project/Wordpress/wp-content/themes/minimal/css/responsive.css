@@ -1,0 +1,38 @@
+
+
+@media screen and (max-width: 480px){
+    header nav ul li{
+        margin: 0 11px;
+    }
+
+    .about_content .contact  {
+        width: 100%;
+    }
+
+    footer .quote_area p:nth-of-type(1),
+    footer .copyright p,
+    .narrow-p,
+    .about_content h4.available,
+    .about_content h4.rate,
+    .about_content .contact p,
+    form {
+        width: 90%;
+    }
+
+    .field label{
+        width: 30%;
+        padding: 10px 10px 0;
+        text-align: left;
+        line-height: initial;
+
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    .portfolio_info {
+        order : -1;
+    }
+}
+
